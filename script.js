@@ -1,8 +1,18 @@
-let r = 20;
-let c = 20;
+let r = 100;
+let c = 100;
+let checkColor = true;
 
 const grid = document.querySelector(".sketch-grid");
 const err = document.querySelector(".error");
+const black =document.getElementById("toggle-black");
+black.addEventListener("click", function(){
+    checkColor = false;
+});
+const color = document.getElementById("toggle-color");
+color.addEventListener("click", function(){
+    checkColor = true;
+});
+
 
 const rowin = document.getElementById("rows");
 const colin = document.getElementById("columns");
@@ -13,6 +23,16 @@ close.addEventListener("click", function(){
     document.querySelector(".resize").classList.toggle("hide");
     document.querySelector(".container").classList.toggle("hide1");
 });
+
+function getRandomHSLColor() {
+  const h = Math.floor(Math.random() * 360);  // Hue (0–360)
+  console.log(h);
+  const s = 70; // Saturation %
+  const l = 50; // Lightness %
+  return `hsl(${h}, ${s}%, ${l}%)`;
+}
+
+console.log(getRandomHSLColor()); // e.g. "hsl(210, 70%, 50%)"
 
 const open = document.getElementById("resize");
 open.addEventListener("click", function(){
@@ -46,7 +66,12 @@ function createGrid(){
         row.appendChild(div);
         div.classList.add("rat");
         div.addEventListener("mouseover", function(){
-            div.style.backgroundColor = "black";
+            if (checkColor==true){
+                div.style.backgroundColor = getRandomHSLColor();
+            }
+            else {
+                div.style.backgroundColor = "black";
+            }
         });
         //div.textContent = `${i}${j}`;
     }
