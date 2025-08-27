@@ -18,7 +18,11 @@ A simple browser-based Etch A Sketch application.
 - [`script.js`](script.js): JavaScript logic for drawing and controls.
 - [`styles.css`](styles.css): App styling and layout.
 
-## Getting Started
+## Getting Started__
+1. **go to**
+   https://tabasko0.github.io/etch-a-sketch/
+
+   OR
 
 1. **Clone the Repository**
    ```bash
