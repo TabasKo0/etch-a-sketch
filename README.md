@@ -4,7 +4,7 @@ A simple browser-based Etch A Sketch application.
 
 ## Demo
 
-[Live Demo](https://github.com/TabasKo0/etch-a-sketch) (if GitHub Pages is enabled for this repo)
+[Live Demo](https://tabasko0.github.io/etch-a-sketch/)(if GitHub Pages is enabled for this repo)
 
 ## Features
 
@@ -19,11 +19,6 @@ A simple browser-based Etch A Sketch application.
 - [`styles.css`](styles.css): App styling and layout.
 
 ## Getting Started__
-1. **go to**
-   https://tabasko0.github.io/etch-a-sketch/
-
-   OR
-
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/TabasKo0/etch-a-sketch.git
