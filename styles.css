@@ -7,11 +7,25 @@ button {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Pacifico', 'Times New Roman', Times, serif;
+    padding:0px;
+    transform:translateY(-10px) translateX(-10px);
+    width:100%;
+    background-color:bisque;
 }
 .head {
-    background-color: white;
+    background-color:rgb(255, 204, 141);
+    font-family: 'Asimovian', 'Times New Roman';
+    font-weight: bold;
     border:none;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #b71313;
+    font-family: "Nunito", "Edu NSW ACT Cursive", 'Times New Roman', Times, serif;
 }
 .controls{
     display: flex;
@@ -22,14 +36,15 @@ body {
 .container {
     z-index: 0;
     margin:0px;
+    padding:0px;
 }
 .sketch-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid rgb(255, 0, 0);
-    height: 80vh;
-    width: 80vw;
+    height: 77vh;
+    width: 77vw;
 }
 .sketch-container{
     display: flex;
@@ -67,12 +82,17 @@ body {
 }
 
 #rows{
-    color:pink;
+    color:black;
 }
 #columns{
-    color: pink;
+    color: black;
 }
 
+#submit{
+    font-size: large;
+    transform: translateY(50%);
+    border:1px black solid;
+}
 .hide{
     opacity: 0%;
     pointer-events: none;
@@ -88,13 +108,7 @@ body {
     right: 5%;
 }
 
-.head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #b71313;
-    font-family: "Nunito", "Edu NSW ACT Cursive", 'Times New Roman', Times, serif;
+#clear,#resize,#toggle-black,#toggle-color{
+    background-color:bisque;
 }
+

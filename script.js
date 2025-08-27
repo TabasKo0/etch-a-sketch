@@ -1,5 +1,5 @@
-let r = 100;
-let c = 100;
+let r = 16;
+let c = 16;
 let checkColor = true;
 
 const grid = document.querySelector(".sketch-grid");
@@ -17,6 +17,7 @@ color.addEventListener("click", function(){
 const rowin = document.getElementById("rows");
 const colin = document.getElementById("columns");
 const submit = document.getElementById("submit");
+
 
 const close = document.getElementById("close");
 close.addEventListener("click", function(){
@@ -38,6 +39,8 @@ const open = document.getElementById("resize");
 open.addEventListener("click", function(){
     document.querySelector(".resize").classList.toggle("hide");
     document.querySelector(".container").classList.toggle("hide1");
+    rowin.value=r;
+    colin.value=c;
 });
 
 
@@ -50,6 +53,8 @@ submit.addEventListener("click", function(){
         createGrid();
         document.querySelector(".resize").classList.toggle("hide");
         document.querySelector(".container").classList.toggle("hide1");
+        rowin.placeholder=r;
+        colin.placeholder=c;
     }
     else {
         err.textContent = "Please enter a number between 10 and 100";
@@ -87,4 +92,6 @@ clr.addEventListener("click", function(){
         }
     }
 });
+
+
 
